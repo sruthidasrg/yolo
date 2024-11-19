@@ -1,5 +1,5 @@
 
-# Custom YOLO Object Detection Model
+# Custom YOLO Object Detection Model For Suspicious Activity Detection
 
 This repository contains a custom-trained YOLO-based object detection model designed to detect various objects related to safety and surveillance scenarios, such as **Assault**, **Fighting**, **Gun**, **Kidnapping**, and more.
 
@@ -62,8 +62,7 @@ The model is optimized for real-time inference and is suitable for applications 
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/your-repo/custom-yolo-detection.git
-   cd custom-yolo-detection
+   git clone https://huggingface.co/Accurateinfosolution/Suspicious_activity_detection_Yolov11_Custom
    ```
 
 2. Install dependencies:
@@ -72,7 +71,7 @@ The model is optimized for real-time inference and is suitable for applications 
    ```
 
 3. Add your trained YOLO model:
-   - Place your `best.pt` file in the project directory.
+   - Place your `Suspicious_Activities_nano.pt` file in the project directory.
 
 ---
 
@@ -94,7 +93,7 @@ The script uses the YOLO framework to load the `best.pt` model and detect object
 from ultralytics import YOLO
 
 # Load the custom YOLO model
-model = YOLO("best.pt")
+model = YOLO("Suspicious_Activities_nano.pt")
 
 # Perform prediction
 model.predict(source="0", show=True, conf=0.6)
@@ -133,6 +132,6 @@ Sample output of the model includes bounding boxes for detected objects with lab
 
 - **YOLO Framework**: [Ultralytics](https://github.com/ultralytics/ultralytics)
 - **Custom Dataset**: Annotated with bounding boxes for the 10 custom classes.
-- **Contributors**: [Your Name](mailto:your_email@example.com)
+- **Contributors**: Shreyanth(mailto:shreyanthhg1427@gmail.com)
 
 ---
